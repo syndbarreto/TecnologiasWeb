@@ -1,0 +1,115 @@
+.above-the-fold {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.hero-image {
+  flex: 1;
+  object-fit: contain;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero-title {
+  font-size: 96px;
+  font-weight: bold;
+  color: #1e4ba1;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+  font-weight: normal;
+  color: #636363;
+}
+
+.hero-description {
+  font-size: 40px;
+  color: black;
+  font-weight: bold;
+}
+
+.pages {
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  gap: 86px;
+  padding: 32px 0;
+}
+
+.pages-row {
+  display: flex;
+  flex-direction: row;
+  gap: 86px;
+}
+
+.page-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border: 4px solid #1e4ba1;
+}
+
+.page-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 0;
+  color: #1e4ba1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-description {
+  flex: 1;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  color: #1e4ba1;
+}
+
+.page-cta {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-cta-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #1e4ba1;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-divider {
+  height: 4px;
+  width: 100%;
+  background-color: #1e4ba1;
+}
+
+.hidden {
+  opacity: 0;
+}
