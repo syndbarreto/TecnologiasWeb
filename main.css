@@ -22,7 +22,6 @@ body {
   max-width: 1200px;
   width: 100%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 32px 0;
@@ -62,6 +61,126 @@ body {
 
 .nav-link.selected {
   font-weight: bold;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+}
+
+/* o símbolo do hambúrguer (3 linhas) */
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #1e4ba1;
+  border-radius: 999px;
+  position: relative;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle-label span::before {
+  top: -6px;
+}
+
+.nav-toggle-label span::after {
+  top: 6px;
+}
+
+.nav-toggle:checked + .nav-toggle-label span {
+  transform: rotate(45deg);
+}
+
+.nav-toggle:checked + .nav-toggle-label span::before {
+  transform: rotate(-90deg);
+  top: 0;
+}
+
+.nav-toggle:checked + .nav-toggle-label span::after {
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    padding: 16px 16px;
+  }
+
+  .nav-title {
+    font-size: 32px;
+  }
+
+  .nav-toggle-label {
+    display: block;
+  }
+
+  /* nav-links vira menu drop-down */
+  .nav-links {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 16px 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    list-style: none;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    display: none;          
+    z-index: 10;
+  }
+
+
+  .nav-toggle:checked + .nav-toggle-label + .nav-links {
+    display: flex;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+.page-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  background-image: linear-gradient(#1e4ba1, #1e88e5);
+  padding: 100px;
+}
+
+.page-header-title {
+  font-size: 3.6rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.page-header-divider {
+  width: 80px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 0 auto 2rem;
+  border-radius: 2px;
+}
+
+.page-header-description {
+  max-width: 540px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 1.2rem;
 }
 
 @media (max-width: 768px) {

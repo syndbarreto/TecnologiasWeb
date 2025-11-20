@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R2-D2 Skills</title>
+    <link rel="stylesheet" href="../../main.css" />
+    <link rel="stylesheet" href="skills.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <h1 class="nav-title">R2-D2</h1>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+      </label>
+
+      <ul class="nav-links">
+        <li class="nav-link"><a href="../../index.html">Home</a></li>
+        <li class="nav-link"><a href="../about/about.html">About</a></li>
+        <li class="nav-link">
+          <a href="../appearances/appearances.html">Appearances</a>
+        </li>
+        <li class="nav-link">
+          <a href="../relationships/relationships.html">Relationships</a>
+        </li>
+        <li class="nav-link selected"><a href="skills.html">Skills</a></li>
+      </ul>
+    </nav>
+
+    <section class="page-header">
+      <header>
+        <h1 class="page-header-title">Engineering Skills Overview</h1>
+        <div class="page-header-divider"></div>
+        <p class="page-header-description">
+          Diagnostic view of R2-D2’s systems, as if you just opened his
+          engineering manual.
+        </p>
+      </header>
+    </section>
+
+    <section class="skills">
+      <div class="skills-layout">
+        <div class="skills-blueprint">
+          <img
+            src="../../assets/images/r2d2 skills.png"
+            alt="R2-D2 blueprint drawing"
+          />
+        </div>
+
+        <div class="skills-list">
+          <h2 class="skills-list-title">Core Systems</h2>
+
+          <div class="skills-cards">
+            <article class="skill-card">
+              <h3>Astromech Navigation</h3>
+              <p>
+                Plots hyperspace routes, corrects star charts in real time and
+                monitors ship integrity during flight.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>Data Interface / Scomp Link</h3>
+              <p>
+                Connects directly to starship computers, doors and Imperial
+                networks to retrieve or override data.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>Holographic Projector</h3>
+              <p>
+                Records and projects encrypted holograms for tactical briefings
+                and secret missions.
+              </p>
+            </article>
+
+            <article class="skill-card">
+              <h3>Repair &amp; Maintenance Tools</h3>
+              <p>
+                Welding torch, buzz saw and multi-purpose arms used to fix ships
+                mid-battle.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+      
+      <section class="skills-modules">
+        <article class="module-card">
+          <h3>Navigation Module</h3>
+          <p>
+            Hyperdrive calculations, course correction, live star-map updates.
+          </p>
+          <span class="status status-online">STATUS: ONLINE</span>
+        </article>
+
+        <article class="module-card">
+          <h3>Security &amp; Hacking</h3>
+          <p>
+            Door overrides, decryption, access to restricted Imperial systems.
+          </p>
+          <span class="status status-online">STATUS: OPTIMAL</span>
+        </article>
+
+        <article class="module-card">
+          <h3>Emergency Systems</h3>
+          <p>
+            Fire extinguisher, shock prod, distress beacon and emergency power.
+          </p>
+          <span class="status status-check">STATUS: REQUIRES CHECK</span>
+        </article>
+      </section>
+
+      <section class="skills-log">
+        <p>Last full diagnostics: 3 BBY — Technician: Skywalker, Anakin.</p>
+      </section>
+    </section>
+  </body>
+</html>
